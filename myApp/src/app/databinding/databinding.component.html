@@ -13,3 +13,26 @@
 <div>
     <input type="text" (keyup)="userData($event)" >
 </div>
+<!-- property-Binding -->   
+<div>
+    <label for=""></label>
+</div>
+
+<p (click)="disableBtn()" >click me!</p>
+<div>
+    <button [disabled]="isDisable"  >Clear</button>
+</div>
+<!-- Databinding Task-1 -->
+<p>Task One</p>
+<div>
+    <label for="">Username</label>
+</div>
+<div>
+    <input type="text" [(ngModel)]="userName">
+</div>
+<p>{{userName}}</p>
+<div>
+    <button  [disabled]="isEnable!" (click)= "enable()" >
+        click
+    </button>
+</div>

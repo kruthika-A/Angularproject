@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatabindingComponent implements OnInit {
   username:string=''
+  isDisable:boolean=false
+  userName:string=''
+  isEnable:boolean=false
+
 
   constructor() { }
 
@@ -17,6 +21,14 @@ export class DatabindingComponent implements OnInit {
     console.log('sfsgfdg',event.target.value);
     
   }
+  disableBtn(){
+    this.isDisable=true
+
+  }
+  enable(){
+    this.isEnable=true
+  }
+
   
 
 }
