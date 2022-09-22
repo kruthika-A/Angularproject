@@ -1,0 +1,15 @@
+<p>databinding works!</p>
+<div>
+    <label for=""></label>
+</div>
+<div>
+    <input type="text" [(ngModel)]="username">
+</div>
+<p>{{username}}</p>
+<!-- view to controller using event -->
+<div>
+    <label for=""></label>
+</div>
+<div>
+    <input type="text" (keyup)="userData($event)" >
+</div>
