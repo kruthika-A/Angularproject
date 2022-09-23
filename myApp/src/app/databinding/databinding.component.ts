@@ -10,6 +10,8 @@ export class DatabindingComponent implements OnInit {
   isDisable:boolean=false
   userName:string=''
   isEnable:boolean=false
+  currentCustomer:boolean=true
+  fruits:Array<string>=['apple','orange','pomegranate','grapes']
 
 
   constructor() { }
